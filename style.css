@@ -1,9 +1,10 @@
 body {
-    background: #595BD4;
+    background: #d9bdbd;
     font-family: 'Titillium Web', sans-serif;
 }
 .loading {
     position: absolute;
+  
     left: 0;
     right: 0;
     top: 50%;
@@ -69,10 +70,26 @@ body {
 }
 .klik {
     position: absolute;
+  text-align: center;
     left: 0;
     right: 0;
-    top: 60%;
-    width: 200px;
+    top: 65%;
+    width: 100px;
+    color: #FFF;
+    margin: auto;
+  -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}
+.klik2 {
+    position: absolute;
+  text-align: center;
+    left: 0;
+    right: 0;
+    top: 55%;
+    width: 100px;
     color: #FFF;
     margin: auto;
   -webkit-transform: translateY(-50%);
