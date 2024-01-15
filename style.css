@@ -1,134 +1,83 @@
-*{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat",sans-serif;
+body {
+    background: #595BD4;
+    font-family: 'Titillium Web', sans-serif;
 }
-#online-members {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  padding: 20px;
-  animation: colorChange 0.5s infinite; /* Adjust the duration and iteration as needed */
+.loading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    width: 100px;
+    color: #FFF;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
-
-@keyframes colorChange {
-  0% {
-    color: #d9bdbd; /* Initial color */
-  }
-  50% {
-    color: #9834c5; /* Midway color */
-  }
-  100% {
-    color: #d9bdbd; /* Final color, same as initial */
-  }
+.loading span {
+    position: absolute;
+    height: 10px;
+    width: 84px;
+    top: 50px;
+    overflow: hidden;
 }
-
-
-.landing-page{
-  width: 100%;
-  height: 100vh;
-  background: #000;
-  position: relative;
-  overflow: hidden;
+.loading span > i {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    -webkit-animation: wait 4s infinite;
+    -moz-animation: wait 4s infinite;
+    -o-animation: wait 4s infinite;
+    animation: wait 4s infinite;
 }
-.landing-page::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: url("images/BG.webp") no-repeat;
-  background-size: cover;
-  opacity: .3;
-  animation: anim 25s linear infinite;
+.loading span > i:nth-of-type(1) {
+    left: -28px;
+    background: yellow;
 }
-@keyframes anim {
-  50%{
-    transform: scale(2);
-  }
-  100%{
-    transform: scale(1);
-  }
-}
-.page-content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 1;
-  width: 100%;
-  max-width: 800px;
-  text-align: center;
-  padding: 0 40px;
-  box-sizing: border-box;
-}
-.page-content h1{
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 900;
-  margin-top: -20px;
-  margin-bottom: 5px;
+.loading span > i:nth-of-type(2) {
+    left: -21px;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    background: lightgreen;
 }
 
-.page-content h2{
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 900;
-  margin-top: -5px;
-  margin-bottom: -5px;
+@-webkit-keyframes wait {
+    0%   { left: -7px  }
+    30%  { left: 52px  }
+    60%  { left: 22px  }
+    100% { left: 100px }
 }
-
-.page-content h3{
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 15px;
-  font-weight: 900;
-  margin-top: -20px;
-  margin-bottom: 20px;
+@-moz-keyframes wait {
+    0%   { left: -7px  }
+    30%  { left: 52px  }
+    60%  { left: 22px  }
+    100% { left: 100px }
 }
-
-.page-content p{
-  color: #fff;
-  margin-bottom: 20px;
+@-o-keyframes wait {
+    0%   { left: -7px  }
+    30%  { left: 52px  }
+    60%  { left: 22px  }
+    100% { left: 100px }
 }
-.page-content span {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 25px;
-  font-weight: 700;
-  color: #eeeaea;
-  border: 2px solid #ece4e4;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  transition: 0.4s linear;
-  background: rgb(236, 75, 99); /* Add this line to set the background color to white */
-  animation: anim 1.5s infinite; /* Adjust the animation duration and iteration as needed */
+@keyframes wait {
+    0%   { left: -7px  }
+    30%  { left: 52px  }
+    60%  { left: 22px  }
+    100% { left: 100px }
 }
-
-@keyframes anim {
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.page-content a span {
-  padding: 2px; /* Add this line to set the padding for the text inside the anchor tag */
-}
-
-.page-content a:hover{
-  color: #fff;
-  background: #ff7979;
-}
-.text{
-  padding: 10px;
-  text-align: justify;
-}
-.text div{
-  margin-bottom: 6px;
+.klik {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60%;
+    width: 200px;
+    color: #FFF;
+    margin: auto;
+  -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
 }
